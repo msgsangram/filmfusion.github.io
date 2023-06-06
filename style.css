@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background-color: #151515;
+    background-color: black;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -14,8 +14,8 @@ body {
 
 .card {
     width: clamp(150px, 95vw, 250px);
-    box-shadow: 0 0 .5rem rgba(255, 0, 0, 1);
-    outline: 2px solid rgba(255, 0, 0, .6);
+    box-shadow: 0 0 .5rem rgb(119, 0, 255);
+    outline: 2px solid rgba(119, 0, 255);
     overflow: hidden;
     color: #fff;
     cursor: pointer;
@@ -30,7 +30,7 @@ body {
 }
 .img img {
     width: 100%;
-    height: 100%;
+    height: 300%;
     object-fit: cover;
 }
 .img::before {
@@ -88,13 +88,13 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 0, 0, .6);
+    border: 2px solid rgba(119, 0, 255);
     color: #fff;
 }
 .search button {
     cursor: pointer;
 }
-.search button:hover { background-color: rgba(255, 0, 0, .6); }
+.search button:hover { background-color: rgba(119, 0, 255); }
 .search button:active { transform: scale(.9); }
 
 .popup-container {
@@ -117,6 +117,7 @@ body {
 .content {
     display: flex;
     align-items: flex-start;
+    padding-top: 10rem;
     gap: 3rem;
     width: 1200px;
     margin-top: 10rem;
@@ -145,6 +146,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+   
 }
 .single-info-container { width: 200px; }
 .right > *:not(h1) { margin: 1rem 0; }
@@ -152,9 +154,9 @@ body {
     border: 2px solid rgba(255, 0, 0, 1);
     box-shadow: 0 0 .5rem rgba(255, 0, 0, 1);
     border-radius: .5rem;
-    max-width: 400px;
+    max-width: flex;
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
 .x-icon {
     font-size: 2rem;
@@ -182,4 +184,37 @@ body {
         top: 10px;
         right: 20px;
     }
+    .topnav a {
+        float: none;
+        display: block;
+      }
 }
+.topnav {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+  }
+  
+  .topnav a {
+    float: right;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: whitesmoke;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  .logo{
+    padding: 10px;
+    color: black;
+    float: left;
+    align-items: center;
+  }
+  
